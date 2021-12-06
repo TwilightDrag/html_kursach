@@ -1,0 +1,126 @@
+@media (min-width: 300px) {
+    .chose{
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .chose{
+        visibility: visible;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 300px;
+        grid-column-gap: 10px;
+        grid-row-gap: 1vw;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border-top: 5px solid red;
+        padding-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    .offroad{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 2;
+        transition: transform .8s;
+    }
+    .offroad:hover{
+        transform: scale(1.5);
+    }
+    .city{
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-row-end: 3;
+        grid-column-end: 4;
+        text-align: right;
+        transition: transform .8s;
+    }
+    .city:hover{
+        transform: scale(1.3);
+    }
+    .way{
+        text-align: center;
+        font-size: 2vw;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 3;
+    }
+    .agitation{
+        text-align: center;
+        font-size: 1.3vw;
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end: 3;
+        grid-column-end: 3;
+    }
+    .pick{
+        width: 30vw;
+        height: auto;
+        object-fit: scale-down;
+    }
+    .chose:hover > .pick:not(:hover) {
+        filter: blur(30px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .chose{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 300px;
+        grid-column-gap: 10px;
+        grid-row-gap: 1vw;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+        border-top: 5px solid red;
+        padding-top: 2vw;
+        margin-bottom: 4vw;
+    }
+    .offroad{
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 3;
+        grid-column-end: 2;
+        transition: transform .8s;
+    }
+    .offroad:hover{
+        transform: scale(1.5);
+    }
+    .city{
+        grid-row-start: 1;
+        grid-column-start: 3;
+        grid-row-end: 3;
+        grid-column-end: 4;
+        text-align: right;
+        transition: transform .8s;
+    }
+    .city:hover{
+        transform: scale(1.3);
+    }
+    .way{
+        text-align: center;
+        font-size: 2vw;
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 3;
+    }
+    .agitation{
+        text-align: center;
+        font-size: 1.3vw;
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-row-end: 3;
+        grid-column-end: 3;
+    }
+    .pick{
+        width: 30vw;
+        height: auto;
+        object-fit: scale-down;
+    }
+    .chose:hover > .pick:not(:hover) {
+        filter: blur(30px);
+    }
+}
